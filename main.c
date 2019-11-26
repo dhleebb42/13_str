@@ -10,7 +10,14 @@ struct student {
 };
 
 int main(void) {
-	struct student s1 = {24, "ÀÌ´ÙÇı", 4.3 };
+	struct student s1 = {24, "Dahye", 4.3 };
+	s1.ID = 123456;
+	strcpy(s1.name, "Dahye");
+	s1.grade = 4.2;
+	
+	printf("ID : %d\n", s1.ID);
+	printf("name : %s\n", s1.name);
+	printf("game : %f\n", s1.grade);
 	
 	return 0;
 }
